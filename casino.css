@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@keyframes moving {
+    0%{scale: 1;}
+    50%{scale: 1.2;}
+    100%{scale: 1;}
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 15px;
+}
+.items{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    /* width: 15rem; */
+    height: 10rem;
+    cursor: pointer;
+    box-shadow: 5px 10px 20px #fff;
+    border-radius: 15px;
+    
+}
+.items img{
+    width: 15rem;
+    height: 10rem;
+    border-radius: 15px;
+}
+.items img:hover{
+    animation-name: moving;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.btn{
+    position: fixed;
+    width: 50px;
+    top: 10px;
+    left: 5px;
+    cursor: pointer;
+    color: rgb(11, 181, 11);
+    border-radius: 10px;
+    font-weight: bolder;
+}
+.btn:hover{
+    color: rgb(18, 18, 242);
+    transition: 1s;
+    scale: 1.2;
+}
+
+.contact p{
+    color: #fff;
+    font-size: large;
+    font-weight: bolder;
+    
+
+}
+.contact{
+    margin-top: 5rem;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+.contact p:hover{
+    color: rgb(255, 255, 15);
+}
+.contact2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.fa-brands{
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.fa-brands:hover{
+    color: rgb(255, 255, 15);
+    transition: 1s;
+    scale: 1.5;
+}
+
+
